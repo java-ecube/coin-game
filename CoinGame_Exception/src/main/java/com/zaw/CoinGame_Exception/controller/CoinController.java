@@ -27,8 +27,7 @@ public class CoinController {
 	@PostMapping("/name")
 	public ResponseEntity<Coin> saveInfo(@RequestParam String name){
 		Coin obj=service.setNameFromController(name);
-		return new ResponseEntity<Coin> (obj, HttpStatus.CREATED);
-		
+		return new ResponseEntity<Coin> (obj, HttpStatus.CREATED);		
 	}
-
+	
 }
